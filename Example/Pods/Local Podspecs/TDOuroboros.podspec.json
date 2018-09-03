@@ -1,8 +1,8 @@
 {
   "name": "TDOuroboros",
   "version": "0.1.0",
-  "summary": "A short description of TDOuroboros.",
-  "description": "TODO: Add long description of the pod here.",
+  "summary": "A Swift async library.",
+  "description": "This CocoaPod provides the ability to chain async tasks.",
   "homepage": "https://github.com/michaeldai1006/TDOuroboros",
   "license": {
     "type": "MIT",
