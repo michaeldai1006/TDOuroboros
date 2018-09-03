@@ -6,8 +6,9 @@
 //  Copyright © 2018 CocoaPods. All rights reserved.
 //
 
-import Foundation
 import UIKit
+import Foundation
+import TDOuroboros
 
 class Animator {
     static func performJumpAnimation(forView view: UIView,
