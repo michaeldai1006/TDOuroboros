@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0A9533BF2845743FBCA64FE3FA460D0C /* Pods-TDOuroboros_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B986834B7CFBEEB349186163276B11 /* Pods-TDOuroboros_Example-dummy.m */; };
 		16A75265213DF76A00A89C79 /* TDOuroboros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A75264213DF76A00A89C79 /* TDOuroboros.swift */; };
+		16A75267213DF82C00A89C79 /* TDOuroboros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A75264213DF76A00A89C79 /* TDOuroboros.swift */; };
 		18A635CEC4F3238EEB8DFFECE0C6369F /* Pods-TDOuroboros_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 086B61BB0D6FCA91D060CC2197070303 /* Pods-TDOuroboros_Tests-dummy.m */; };
 		3822491D16D9D642AE147F94834819FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		523AAF6918E185631DCF83D92B9D4EF7 /* Pods-TDOuroboros_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 07AC1BB1C52EA2C9BE2721E452B8C28D /* Pods-TDOuroboros_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -335,6 +336,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16A75267213DF82C00A89C79 /* TDOuroboros.swift in Sources */,
 				BD9CCD06298E4603016CEB69B17D5858 /* TDOuroboros-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

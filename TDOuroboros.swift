@@ -6,13 +6,13 @@
 //
 
 public class TDTaskQueueManager {
-    static let shared = TDTaskQueueManager()
+    static public let shared = TDTaskQueueManager()
     public typealias task = () -> ()
     private var taskQueue: TDQueue<task>
     
-    init() { taskQueue = TDQueue<task>() }
+    public init() { taskQueue = TDQueue<task>() }
     
-    func enqueue(_ operation: @escaping task) {
+    public func enqueue(_ operation: @escaping task) {
         if (taskQueue.size() == 0) {
             taskQueue.enqueue(operation)
             operation()
@@ -21,7 +21,7 @@ public class TDTaskQueueManager {
         }
     }
     
-    func taskCompleted() {
+    public func taskCompleted() {
         _ = taskQueue.dequeue()
         taskQueue.next()?()
     }
