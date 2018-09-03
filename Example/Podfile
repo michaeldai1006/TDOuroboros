@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'TDOuroboros_Example' do
+  pod 'TDOuroboros', :path => '../'
+
+  target 'TDOuroboros_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
