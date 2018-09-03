@@ -1,0 +1,16 @@
+PODS:
+  - TDOuroboros (0.1.0)
+
+DEPENDENCIES:
+  - TDOuroboros (from `../`)
+
+EXTERNAL SOURCES:
+  TDOuroboros:
+    :path: ../
+
+SPEC CHECKSUMS:
+  TDOuroboros: 3591abf23513d5b5d1d10390da0728309dff393d
+
+PODFILE CHECKSUM: 022a2ada8dc62f3e88f2594135771d3f22871387
+
+COCOAPODS: 1.4.0.beta.2
