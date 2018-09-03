@@ -30,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		162B835E213DFAC700F2A852 /* ShapeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeCollectionViewCell.swift; sourceTree = "<group>"; };
+		162B8360213DFB2700F2A852 /* Shapes.sketch */ = {isa = PBXFileReference; lastKnownFileType = file; path = Shapes.sketch; sourceTree = "<group>"; };
 		23158C4D8E5690EBECD2B14A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		3E0EC3C5012E1470FFDBCA3E /* Pods-TDOuroboros_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDOuroboros_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TDOuroboros_Example/Pods-TDOuroboros_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		430DEE1A2A44CEE91AA38C51 /* Pods_TDOuroboros_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TDOuroboros_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +84,7 @@
 		16A75269213DF9EB00A89C79 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				162B8360213DFB2700F2A852 /* Shapes.sketch */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
