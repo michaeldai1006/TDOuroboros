@@ -30,7 +30,7 @@ This CocoaPod provides the ability to chain async tasks.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'TDOuroboros/Classes/*.{h,m,swift}'
+  s.source_files = '*.{h,m,swift}'
 
   # s.resource_bundles = {
   #   'TDOuroboros' => ['TDOuroboros/Assets/*.png']
