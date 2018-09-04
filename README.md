@@ -1,6 +1,5 @@
 ![TDOuroboros](./README/Images/READMELogo.png)
 
-[![CI Status](https://img.shields.io/travis/michaeldai1006/TDOuroboros.svg?style=flat)](https://travis-ci.org/michaeldai1006/TDOuroboros)
 [![Version](https://img.shields.io/cocoapods/v/TDOuroboros.svg?style=flat)](https://cocoapods.org/pods/TDOuroboros)
 [![License](https://img.shields.io/cocoapods/l/TDOuroboros.svg?style=flat)](https://cocoapods.org/pods/TDOuroboros)
 [![Platform](https://img.shields.io/cocoapods/p/TDOuroboros.svg?style=flat)](https://cocoapods.org/pods/TDOuroboros)
