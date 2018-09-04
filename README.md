@@ -5,6 +5,16 @@
 [![License](https://img.shields.io/cocoapods/l/TDOuroboros.svg?style=flat)](https://cocoapods.org/pods/TDOuroboros)
 [![Platform](https://img.shields.io/cocoapods/p/TDOuroboros.svg?style=flat)](https://cocoapods.org/pods/TDOuroboros)
 
+TDOuroboros is an async task chaining library written in Swift.
+
+- [Why TDOuroboros](why-tdouroboros)
+- [Installation](installation)
+- [Usage](usage)
+  - [Use shared task queue instance](use-shared-task-queue-instance)
+  - [Create your own task queue](create-your-own-task-queue)
+- [About](about)
+- [License](license)
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
