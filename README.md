@@ -47,7 +47,7 @@ A demo iOS project is included in this repo, under subfolder *Example*.
 Every time the list of shapes is reordered by drag and drop, animation tasks of each shape will be enqueued into the shared task queue instance, in the order of from left to right on the list. Then the animation for each shape will be executed in order.  
 
 <p align="center">
-  <img src="./README/Images/TDOuroborosDemo.gif"/>
+  <img src="./README/Images/TDOuroborosDemo.GIF"/>
 </p>
 
 ## Usage
