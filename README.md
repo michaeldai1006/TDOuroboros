@@ -15,6 +15,32 @@ TDOuroboros is an async task chaining library written in Swift.
 - [About](about)
 - [License](license)
 
+## Why TDOuroboros
+TDOuroboros is an iOS library written in Swift which provides the ability to chain async tasks, such as animation tasks, HTTP request tasks, etc.
+Traditionally, connects async tasks can be done by nesting completion handlers, such as:
+```swift
+import UIKit
+
+UIView.animate(withDuration: 1.0, animations: {
+    // Perform animation 1
+}) { (result1) in
+    UIView.animate(withDuration: 1.0, animations: {
+        // Perform animation 2
+    }, completion: { (result2) in
+        UIView.animate(withDuration: 1.0, animations: {
+            // Perform animation 3
+        }, completion: { (result3) in
+            UIView.animate(withDuration: 1.0, animations: {
+                // Perform animation 4
+            }, completion: { (result4) in
+                print('Animation 1-4 executed');
+            })
+        })
+    })
+}
+```
+
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
