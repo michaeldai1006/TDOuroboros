@@ -96,21 +96,19 @@ taskQueue.enqueue { [weak self] in
 
 }
 ```
-
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
-
 ## Installation
-
 TDOuroboros is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'TDOuroboros'
 ```
+
+## Example
+
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
+## Requirements
 
 ## Author
 
