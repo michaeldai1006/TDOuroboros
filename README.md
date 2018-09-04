@@ -44,7 +44,7 @@ A task queue shall be created at first, to store and manage async tasks. Every t
 
 **As an example:**  
 A demo iOS project is included in this repo, under subfolder *Example*.  
-The shared task queue is used in this project. Every time the list of shapes is reordered by drag and drop, animation tasks of each shape will be enqueued into the shared task queue, in the order of from left to right on the list. Then the animation for each shape will be executed in order.  
+Every time the list of shapes is reordered by drag and drop, animation tasks of each shape will be enqueued into the shared task queue instance, in the order of from left to right on the list. Then the animation for each shape will be executed in order.  
 
 <p align="center">
   <img src="./README/Images/TDOuroborosDemo.gif"/>
