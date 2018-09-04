@@ -16,8 +16,8 @@ TDOuroboros is an async task chaining library written in Swift.
 - [License](license)
 
 ## Why TDOuroboros
-TDOuroboros is an iOS library written in Swift which provides the ability to chain async tasks, such as animation tasks, HTTP request tasks, etc.
-Traditionally, connects async tasks can be done by nesting completion handlers, such as:
+TDOuroboros is an iOS library written in Swift which provides the ability to chain async tasks, such as animation tasks, HTTP request tasks, etc.  
+Traditionally, connect async tasks can be done by nesting completion handlers, such as:
 ```swift
 import UIKit
 
@@ -30,16 +30,25 @@ UIView.animate(withDuration: 1.0, animations: {
         UIView.animate(withDuration: 1.0, animations: {
             // Perform animation 3
         }, completion: { (result3) in
-            UIView.animate(withDuration: 1.0, animations: {
-                // Perform animation 4
-            }, completion: { (result4) in
-                print('Animation 1-4 executed');
-            })
+            print('Animation 1-3 executed');
         })
     })
 }
 ```
+**There are 2 major defects about this approach:**
+1. Pyramid of doom
+2. Unable to handle tasks generated at run time
 
+**TDOuroboros handles tasks very differently:**  
+A task queue shall be created at first, to store and manage async tasks. Every time a new task is generated or defined, it shall be enqueued into the task queue created at the very beginning. After the completion of each task, it shall notify the task queue about a task has just been completed. The task queue will dequeue a new task and execute it.  
+
+**As an example:**  
+A demo iOS project is included in this repo, under subfolder *Example*.  
+The shared task queue is used in this project. Every time the list of shapes is reordered by drag and drop, animation tasks of each shape will be enqueued into the shared task queue, in the order of from left to right on the list. Then the animation for each shape will be executed in order.  
+
+<p align="center">
+  <img src="./README/Images/TDOuroborosDemo.gif"/>
+</p>
 
 ## Example
 
