@@ -30,7 +30,7 @@ UIView.animate(withDuration: 1.0, animations: {
         UIView.animate(withDuration: 1.0, animations: {
             // Perform animation 3
         }, completion: { (result3) in
-            print('Animation 1-3 executed');
+            print("Animation 1-3 executed");
         })
     })
 }
@@ -49,6 +49,53 @@ Every time the list of shapes is reordered by drag and drop, animation tasks of 
 <p align="center">
   <img src="./README/Images/TDOuroborosDemo.gif"/>
 </p>
+
+## Usage
+### Use shared task queue instance
+If only one task queue is needed for the App or the Framework you are creating, you can use the free, out-of-the-box shared instance of task queue manager.
+```swift
+import TDOuroboros
+import UIKit
+
+// Enqueue a new task into the shared task queue manager instance
+TDTaskQueueManager.shared.enqueue { [weak self] in
+
+    // Task code here
+    UIView.animate(withDuration: 1.0, animations: {
+        print("Hello World")
+    }, completion: { (result) in
+        if (result) {
+            // After task finished, notify task queue manager about task completed
+            TDTaskQueueManager.shared.taskCompleted()
+        }
+    })
+
+}
+```
+### Create your own task queue
+You can always create your own task queue manager instance, many queue instances can coexist in one App/Framework.
+```swift
+import TDOuroboros
+import UIKit
+
+// Create new task queue manager instance
+let taskQueue = TDTaskQueueManager()
+
+// Enqueue a new task into the queue
+taskQueue.enqueue { [weak self] in
+
+    // Task code here
+    UIView.animate(withDuration: 1.0, animations: {
+        print("Hello World")
+    }, completion: { (result) in
+        if (result) {
+            // After task finished, notify task queue manager about task completed
+            self?.taskQueue.taskCompleted()
+        }
+    })
+
+}
+```
 
 ## Example
 
