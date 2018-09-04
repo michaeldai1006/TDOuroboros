@@ -104,16 +104,10 @@ it, simply add the following line to your Podfile:
 pod 'TDOuroboros'
 ```
 
-## Example
+## About
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
-
-## Author
-
-michaeldai1006, dtc74110@gmail.com
+We love PRs, come become part of the project!
 
 ## License
 
-TDOuroboros is available under the MIT license. See the LICENSE file for more info.
+TDOuroboros is available under the MIT license. See the [LICENSE](./LICENSE) file for more info.
