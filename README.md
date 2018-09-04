@@ -40,11 +40,11 @@ UIView.animate(withDuration: 1.0, animations: {
 2. Unable to handle tasks generated at run time
 
 **TDOuroboros handles tasks very differently:**  
-A task queue shall be created at first, to store and manage async tasks. Every time a new task is generated or defined, it shall be enqueued into the task queue created at the very beginning. After the completion of each task, it shall notify the task queue about a task has just been completed. The task queue will dequeue a new task and execute it.  
+A task queue shall be created at first, to keep and manage async tasks. Every time a new task is generated or defined, it shall be enqueued into the task queue created at the very beginning. After the completion of each task, it shall notify the task queue about the task has just been completed. The task queue will dequeue a new task and execute it.  
 
 **As an example:**  
 A demo iOS project is included in this repo, under subfolder *Example*.  
-Every time the list of shapes is reordered by drag and drop, animation tasks of each shape will be enqueued into the shared task queue instance, in the order of from left to right on the list. Then the animation for each shape will be executed in order.  
+Every time the list of shapes is reordered by drag and drop, animation tasks of each shape will be enqueued into the shared task queue instance, in the order of from left to right on the list. After that the animation for each shape will be executed in order.  
 
 <p align="center">
   <img src="./README/Images/TDOuroborosDemo.GIF"/>
@@ -52,7 +52,7 @@ Every time the list of shapes is reordered by drag and drop, animation tasks of 
 
 ## Usage
 ### Use shared task queue instance
-If only one task queue is needed for the App or the Framework you are creating, you can use the free, out-of-the-box shared instance of task queue manager.
+If only one task queue is needed for the App or the Framework you are creating, or if you wish to have one shared task queue which can be used anywhere in the Application. You can use the shared instance of task queue manager.
 ```swift
 import TDOuroboros
 import UIKit
