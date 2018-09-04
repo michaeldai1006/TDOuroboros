@@ -7,13 +7,13 @@
 
 TDOuroboros is an async task chaining library written in Swift.
 
-- [Why TDOuroboros](why-tdouroboros)
-- [Usage](usage)
-  - [Use shared task queue instance](use-shared-task-queue-instance)
-  - [Create your own task queue](create-your-own-task-queue)
-- [Installation](installation)
-- [About](about)
-- [License](license)
+- [Why TDOuroboros](#why-tdouroboros)
+- [Usage](#usage)
+  - [Use shared task queue instance](#use-shared-task-queue-instance)
+  - [Create your own task queue](#create-your-own-task-queue)
+- [Installation](#installation)
+- [About](#about)
+- [License](#license)
 
 ## Why TDOuroboros
 TDOuroboros is an iOS library written in Swift which provides the ability to chain async tasks, such as animation tasks, HTTP request tasks, etc.  
